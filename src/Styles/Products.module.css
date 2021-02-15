@@ -1,0 +1,140 @@
+:root {
+    --color-accents: #144E5A;
+    --color-delete: #E35E6A;
+    --color-edit: #F2C849;
+    --font-color-forms: #2E2F2F;
+    --font-color-btn: #F2F2F2;
+    --bg-color: #FFFFFF;
+    --bg-color-light: 5px 10px 18px #D8D7E1;
+    --font-size-sm: 18px;
+    --font-size-lg: 36px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main_container {
+    background-color: var(--bg-color);
+    box-shadow: var(--bg-color-light);
+    border-radius: 10pt;
+    margin: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form label {
+    font-size: var(--font-size-sm);
+}
+
+h1 {
+    color: var(--color-accents);
+    text-align: center;
+    margin: 5px;
+}
+
+h2 {
+    color: var(--color-accents);
+    text-align: center;
+    padding: 10px;
+}
+
+select {
+    background-color: var( --bg-color);
+    border: 1px solid var(--color-accents);
+    border-radius: 5pt;
+    padding: 2px;
+    width: 50%;
+    height: 25px;
+}
+
+input {
+    background-color: var( --bg-color);
+    border: 1px solid var(--color-accents);
+    border-radius: 5pt;
+    margin: 10px;
+    padding: 2px;
+    width: 50%;
+    height: 25px;
+}
+
+.btn {
+    background-color: var(--color-accents);
+    border-radius: 5pt;
+    border: none;
+    color: var(--font-color-btn);
+    cursor: pointer;
+    font-weight: bold;
+    margin: 20px;
+    outline: none;
+    width: 150px;
+    height: 30px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.table {
+    font-size: var(--font-size-sm);
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 680px) {
+    .main_container {
+        width: 100%;
+    }
+    .table {
+        font-size: 10px;
+    }
+    .btn_edit {
+        width: 5%;
+    }
+    .btn_delete {
+        width: 5%;
+    }
+}
+
+.table th {
+    color: var(--color-accents);
+}
+
+.table, th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 3px;
+}
+
+.btn_edit {
+    background-color: var(--color-edit);
+    border-radius: 5pt;
+    border: none;
+    color: var(--font-color-forms);
+    cursor: pointer;
+    font-weight: bold;
+    margin: 20px;
+    outline: none;
+    width: 80%;
+    height: 30px;
+}
+
+.btn_delete {
+    background-color: var(--color-delete);
+    border-radius: 5pt;
+    border: none;
+    color: var(--font-color-forms);
+    cursor: pointer;
+    font-weight: bold;
+    margin: 20px;
+    outline: none;
+    width: 80%;
+    height: 30px;
+}
